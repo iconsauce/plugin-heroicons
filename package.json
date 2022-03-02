@@ -1,13 +1,13 @@
 {
-  "name": "@iconsauce/mdi-svg",
-  "version": "1.0.5",
-  "description": "This plugin is created to work with iconsauce",
+  "name": "@iconsauce/heroicons",
+  "version": "1.0.1",
+  "description": "An iconsauce plugin to gather heroicons SVG icons pack",
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc --declaration"
   },
   "dependencies": {
-    "@mdi/svg": "^6.5.95"
+    "heroicons": "^1.0.5"
   },
   "devDependencies": {
     "@iconsauce/core": "0.1.2",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iconsauce/plugin-mdi-svg.git"
+    "url": "git+https://github.com/iconsauce/plugin-heroicons.git"
   },
   "keywords": [
     "plugin"
@@ -39,7 +39,7 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iconsauce/plugin-mdi-svg/issues"
+    "url": "https://github.com/iconsauce/plugin-heroicons/issues"
   },
-  "homepage": "https://github.com/iconsauce/plugin-mdi-svg#readme"
+  "homepage": "https://github.com/iconsauce/plugin-heroicons#readme"
 }

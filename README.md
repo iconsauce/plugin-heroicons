@@ -1,17 +1,21 @@
-# @iconsauce/mdi-svg
+# @iconsauce/heroicons
 
-This plugin scrapes [Material Design Icons](https://materialdesignicons.com/) of [@mdi/svg](https://github.com/Templarian/MaterialDesign-SVG) from which contains SVG versions.
+This plugin scrapes [Heroicons](https://heroicons.com/) from it's [module](https://github.com/tailwindlabs/heroicons) from which contains SVG versions.
 
 For more infos go to [iconsauce docs][iconsauce-docs].
+
+### Important note
+
+At the moment, **outline icons are disabled** because are not shape based and are not correctly converted to font.
 
 ```js
 module.exports = {
   content: [
     './src/**/*.{tsx,ts}',
   ],
-  fontSize: '24px',
+  fontSize: '20px',
   plugin: [
-    require('@iconsauce/mdi-svg'),
+    require('@iconsauce/heroicons'),
   ],
 }
 ```
@@ -21,14 +25,14 @@ You will be able to use these icons in your project.
 ```jsx
 const MyComponent = () => {
 
-  const icon = 'mdi/grass'
+  const icon = 'hero/solid/users'
 
   return <section className={ icon }>
-    <div className="grid desktop:grid-cols-4 mdi/emoticon-happy tablet:grid-cols-2 grid-cols-1 desktop:gap-6 gap-12 desktop:auto-rows-fr desktop:items-end">
-      <i className="mdi/access-point"/>
-      <span className='bg-adjust-tone-01/24 mgg/terminal'/>
+    <div className="grid desktop:grid-cols-4 hero/solid/calculator tablet:grid-cols-2 grid-cols-1 desktop:gap-6 gap-12 desktop:auto-rows-fr desktop:items-end">
+      <i className="hero/solid/duplicate"/>
+      <span className='bg-adjust-tone-01/24 hero/solid/pencil'/>
       <div>
-        <footer title="mdi/gondola"></footer>
+        <footer title="hero/solid/star"></footer>
       </div>
     </div>
   </section>
@@ -44,7 +48,7 @@ This plug-in will generate only icons used:
   src: url("data:font/truetype;charset=utf-8;base64,A...Z") format("truetype");
 }
 
-[class^="mdi/"], [class*=" mdi/"] {
+[class^="hero/"], [class*=" hero/"] {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "iconsauce" !important;
@@ -54,11 +58,11 @@ This plug-in will generate only icons used:
   line-height: 1;
 }
 
-.mdi\/access-point::before { content: "\ea01" }
-.mdi\/emoticon-happy::before { content: "\ea02" }
-.mdi\/gondola::before { content: "\ea03" }
-.mdi\/grass::before { content: "\ea04" }
-.mdi\/harddisk::before { content: "\ea05" }
+.hero\/calculator::before { content: "\ea01" }
+.hero\/duplicate::before { content: "\ea02" }
+.hero\/pencil::before { content: "\ea03" }
+.hero\/star::before {  content: "\ea04"}
+.hero\/users::before { content: "\ea05" }
 ```
 
 [iconsauce-docs]: https://iconsauce.github.io/docs/
