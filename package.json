@@ -1,10 +1,11 @@
 {
   "name": "@iconsauce/heroicons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An iconsauce plugin to gather heroicons SVG icons pack",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc --declaration"
+    "build": "tsc --declaration",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "heroicons": "^1.0.5"
