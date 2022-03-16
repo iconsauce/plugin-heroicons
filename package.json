@@ -1,6 +1,6 @@
 {
   "name": "@iconsauce/heroicons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An iconsauce plugin to gather heroicons SVG icons pack",
   "main": "lib/index.js",
   "scripts": {
